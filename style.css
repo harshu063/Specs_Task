@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+
+    display: flex;
+    gap: 3vh;
+    height: 12vh;
+}
+
+/**/
+.nav-left {
+
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.left-top {
+    display: flex;
+    width: 85%;
+    gap: 2vh;
+    height: 4vh
+}
+
+.left-top button {
+    border: none;
+    background-color: white;
+}
+
+.navbtn-two {
+    border-left: 2px solid !important;
+    border-right: 2px solid !important;
+    padding: 0 15px 0 15px;
+
+}
+
+.left-top button a {
+    text-decoration: none;
+    color: black
+}
+
+.left-bottom {
+    display: flex;
+
+    width: 85%;
+    gap: 4vh;
+    height: 6vh
+}
+
+.left-bottom h4 {
+    font-weight: bold;
+}
+
+
+/*currying*/
+
+.nav-logo {
+    display: flex;
+    width: 20%;
+    height: 12vh;
+
+}
+
+.nav-logo img {
+    width: 75%;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+}
+
+
+/**/
+
+.nav-right {
+
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.right-top {
+    display: flex;
+    margin-right: 80px;
+    width: 50%;
+    align-self: right;
+    gap: 2vh;
+    height: 4vh;
+    align-self: flex-top end;
+
+}
+
+.navbtn-2 {
+    border-left: 2px solid !important;
+    border-right: 2px solid !important;
+    padding: 0 15px 0 15px;
+}
+
+.right-top button {
+    border: none;
+    background-color: white;
+}
+
+.right-top button a {
+    text-decoration: none;
+    color: black
+}
+
+.right-bottom {
+    display: flex;
+    gap: 3vh;
+    margin-right: 80px;
+}
+
+.right-bottom img {
+    width: 9%;
+    padding-bottom: 5px;
+}
+
+.phone {
+    display: none;
+}
+
+.phone-logo {
+    width: 20%
+}
+
+.phone-logo img {
+    width: 100%
+}
+
+.phone {
+    gap: 2vh;
+}
+
+.option {
+    width: 25%
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 249, 250);
+
+}
+
+.container {
+    width: 85%;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.left-side-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side-container p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+
+.try-now-and-whats-new-section {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.5vw;
+    margin-top: 20px;
+}
+
+.try-now-button {
+    padding: 10px 35px 10px 35px;
+    border-radius: 40px;
+    background-color: rgb(20, 211, 116);
+    color: white;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+.play-btn {
+    height: 5vh;
+    border: none;
+}
+
+.play-btn i {
+    font-size: 2rem;
+    color: rgb(20, 211, 116);
+    border-radius: 50%;
+
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+}
+
+.play-btn i:hover {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 0.1em rgb(96, 223, 160);
+    cursor: pointer;
+}
+
+.right-side-container {
+    width: 60.27%;
+    background-image: url(./assets/Image\ 35.png), url(./assets/Image\ 39.png), url(./assets/Group\ 6248.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0% 33%, 120% 31%, 20% 80%;
+    background-size: 36vh, 75vh, 60vh;
+    height: 58vh;
+}
+
+.caption-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+
+}
+
+.caption-description {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 77%;
+    text-align: center;
+}
+
+.caption-description p {
+    opacity: 0.602;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.cards {
+    width: 90%;
+    height: 70vh;
+    display: flex;
+}
+
+.anti-reflective-card {
+    background-image: url(./assets/7.jpg);
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 88%;
+    display: flex;
+    gap: 40vh;
+    flex-direction: column;
+    background-size: 127%;
+    background-position: 90%;
+    background-position-y: 60%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: width 2s ease-in;
+}
+
+.anti-reflective-card:hover {
+    width: 65%;
+}
+
+.top-caption {
+    align-items: flex-start;
+    color: white;
+    font-weight: 900;
+    padding: 0;
+    margin: 25px 0 0 40px;
+}
+
+.bottom-caption {
+    margin: 0 0 0 40px;
+}
+
+.bottom-caption button {
+    border-radius: 40px;
+    border: none;
+    padding: 5px 20px 5px 20px;
+}
+
+.free-coating-card {
+    width: 22%;
+    background-color: #512B61;
+    height: 61.6vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-image: url(./assets/Image\ 30.png);
+    background-repeat: no-repeat;
+    background-position-y: 88%;
+    background-position-x: 90%;
+    background-size: 50%;
+    transition: 2s ease-in;
+}
+
+.free-coating-card:hover {
+    width: 40%;
+}
+
+.free-coating-card-header,
+.shipping-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vh;
+    margin: 30px 0 0 0;
+    color: white;
+}
+
+.free-coating-card-header h3 {
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(9, 163, 155));
+    padding-left: 20px;
+}
+
+.free-coating-card-header p,
+.shipping-card-header {
+    margin-left: 20px;
+    font-weight: 100;
+    width: 80%;
+}
+
+.shipping-card {
+    background-image: url(./assets/Group\ 6249.png);
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+    background-position-x: 50%;
+    background-size: 60%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 2s ease-in;
+    width: 22%;
+    background-color: #724D92;
+    height: 61.6vh;
+}
+
+.shipping-card:hover {
+    width: 40%;
+}
+
+.specscart-advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 2.7vh;
+    margin-left: 20px;
+}
+
+.advantage {
+    display: flex;
+    color: white;
+    padding-right: 25px;
+    font-size: 10px;
+}
+
+.advantage img {
+    height: 70%;
+    width: 15%;
+    margin-right: 20px;
+}
+
+.eyes-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+}
+
+.details {
+    width: 77%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.details p {
+    opacity: 0.602;
+}
+
+.info-img {
+    width: 60%;
+    height: 70vh;
+    background-image: url(./assets/with-and-without-glasses.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:950px) and (min-width:350px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .phone {
+        display: flex;
+        gap: 5vh;
+    }
+    #checkbox_toggle{
+       display: none;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+        margin-top: 10px;
+        background-color: rgb(96, 223, 160);
+    }
+    .menu li a{
+        text-decoration: none;
+    }
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2.1rem;
+        margin-right: 1vh;
+    }
+    .phone-logo img{
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    }
+    .phone-details{
+        margin-top: 20px;
+    }
+    .container {
+        flex-direction: column-reverse;
+        height: 80vh;
+        gap: 0;
+
+    }
+
+    .left-side-container {
+        height: 20vh;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .left-side-container p {
+        font-size: 1.09rem;
+    }
+
+    .left-side-container h1 {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .right-side-container {
+        width: 100%;
+        background-position: 0% -5%, 140% 8%, 20% 60%;
+        background-size: 20vh, 33vh, 33vh;
+        height: 28.5vh;
+        margin-top: 0;
+    }
+
+    .try-now-and-whats-new-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .play-btn {
+        width: 0vw;
+        margin-left: 100px;
+    }
+
+    .caption-main-container {
+        height: 60vh;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 0;
+        width: 100%;
+    }
+    .anti-reflective-card {
+        margin: 0;
+        width: 97%;
+        gap: 22vh;
+        height: 43vh;
+    }
+    .top-caption {
+        margin-top: 70px;
+        margin-left: 20px;
+        font-size: 0.8rem;
+    }
+    .bottom-caption {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .free-coating-card {
+        width: 97%;
+        margin: 0;
+        flex-direction: column;
+        gap: 0;
+        height: 25vh;
+        background-size: 25%;
+        background-position-x: 100%;
+        background-position-y: 50%;
+    }
+
+    .specscart-advantages {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+    .advantage img{
+        width: 80%;
+    }
+
+    .shipping-card {
+        width: 97%;
+        margin: 0;
+        margin-top: 20px;
+        height: 20vh;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px !important;
+        border-top-right-radius: 0px;
+        margin-bottom: 2vh;
+        background-size: 30%;
+        background-position-x: 95%;
+    }
+    .free-coating-card:hover{
+        transition: none;
+    }
+    .shipping-card:hover{
+        transition: none;
+    }
+    .anti-reflective-card:hover{
+        transition: none;
+    }
+    .info-img{
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 90%;
+    }
+}
+@media screen and (max-width:376px) and (min-width:300px) {
+    .right-side-container {
+        width: 100%;
+        background-position: 0% 0%, 120% 6%, 20% 60% ;
+        background-size: 20vh, 33vh, 30vh;
+        height: 28.5vh;
+        margin-top: 0;
+    }
+}
