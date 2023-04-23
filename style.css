@@ -399,13 +399,113 @@ body {
     opacity: 0.602;
 }
 
-.info-img {
+
+/* .info-img {
     width: 60%;
     height: 70vh;
     background-image: url(./assets/with-and-without-glasses.jpg);
     background-size: 100%;
     border-radius: 20px;
-}
+} */
+.wrapper{
+    position: relative;
+    height: 500px;
+    width: 750px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .wrapper .images{
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  .wrapper .images .img-1{
+    height: 100%;
+    width: 150%;
+    background: url("./assets/with-and-without-glasses.jpg") no-repeat;
+    
+   
+  }
+  .wrapper .images .img-2{
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    filter: blur(5px);
+    background: url("./assets/with-and-without-glasses.jpg") no-repeat;
+
+  }
+  .wrapper .slider{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  .wrapper .slider input{
+    width: 100%;
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+  }
+  .slider input::-webkit-slider-thumb{
+    height: 486px;
+    width: 3px;
+    background: none;
+    -webkit-appearance: none;
+    cursor: col-resize;
+  }
+  .slider .drag-line{
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    left: 49.85%;
+    pointer-events: none;
+    background-color: rgb(9, 163, 155);
+  }
+  .slider .drag-line::before,
+  .slider .drag-line::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 222px;
+    background: #fff;
+    background-color: rgb(9, 163, 155);
+  }
+  .slider .drag-line::before{
+    top: 0;
+  }
+  .slider .drag-line::after{
+    bottom: 0;
+  }
+  .slider .drag-line span{
+    height: 42px;
+    width: 42px;
+    border: 3px solid rgb(9, 163, 155);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(9, 163, 155);
+  }
+  .slider .drag-line span::before,
+  .slider .drag-line span::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    border: 10px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .slider .drag-line span::before{
+    left: 40%;
+    border-left-color: #fff;
+  }
+  .slider .drag-line span::after{
+    left: 60%;
+    border-top-color: #fff;
+  }
+
 
 @media screen and (max-width:950px) and (min-width:350px) {
 

@@ -170,10 +170,31 @@
                 your eyes, you'll also notice an improvement in your vision. And the best part? Anti-glare, anti-scratch, and anti-UV coatings are 
                 all free of cost at Specscart!</p>
         </div>
-
-        <div class="info-img">
-        </div>
+<!-- <div class="info-img">
+        </div> -->
+        <div class="wrapper">
+            <div class="images">
+              <div class="img-1"></div>
+              <div class="img-2"></div>
+            </div>
+            <div class="slider">
+              <div class="drag-line">
+                <span></span>
+              </div>
+              <input type="range" min="0" max="100" value="50">
+            </div>
+          </div>
     </div>
 </body>
-
+<script>
+    // using Js for blur-effect on dragging //
+    const slider = document.querySelector(".slider input");
+    const img = document.querySelector(".images .img-2");
+    const dragLine = document.querySelector(".slider .drag-line");
+    slider.oninput = ()=>{
+      let sliderVal = slider.value;
+      dragLine.style.left = sliderVal + "%";
+      img.style.width = sliderVal + "%";
+    }
+  </script>
 </html>
