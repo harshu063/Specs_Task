@@ -653,7 +653,8 @@ body {
         width: 97%;
         gap: 22vh;
         height: 43vh;
-        transition: 1s;    }
+        transition: 1s;
+    }
 
     .top-caption {
         margin-top: 70px;
@@ -713,6 +714,7 @@ body {
     .anti-reflective-card:hover {
         width: 97%;
     }
+
     .wrapper {
         width: 90%;
         height: 30vh;
@@ -729,12 +731,15 @@ body {
     }
 
     .slider .drag-line {
-        height: 27.5vh;
+        height: 27.4vh;
+
     }
 
     .slider .drag-line span {
         top: 80%;
     }
+
+
 }
 
 @media screen and (max-width:376px) and (min-width:363px) {
@@ -759,8 +764,15 @@ body {
         }
     }
 
+    .slider .drag-line::before,
+    .slider .drag-line::after {
+        height: 12px;
+
+    }
+
 }
-@media screen and (min-width:280px) and (max-width:362px){
+
+@media screen and (min-width:280px) and (max-width:362px) {
     .right-side-container {
         width: 100%;
         background-position: 6% 0%, 140% 6%, 45% 60%;
@@ -780,5 +792,10 @@ body {
         to {
             background-position: 6% 0%, 140% 6%, 45% 60%;
         }
+    }
+
+    .slider .drag-line::before,
+    .slider .drag-line::after {
+        height: 12px;
     }
 }
