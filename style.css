@@ -410,9 +410,10 @@ body {
 .wrapper{
     position: relative;
     height: 500px;
-    width: 750px;
+    width: 78%;
     overflow: hidden;
     background: #fff;
+
   }
   .wrapper .images{
     height: 100%;
@@ -669,6 +670,24 @@ body {
         background-size: 100%;
         width: 90%;
     }
+    .wrapper{
+        width: 90%;
+        height: 30vh;
+    }
+    .wrapper .images .img-1{
+        background-size: 41vh;
+       
+    }
+    .wrapper .images .img-2{
+        background-size: 41vh;
+    
+    }
+    .slider .drag-line{
+        height: 27.5vh;
+    }
+    .slider .drag-line span{
+        top: 80%;
+    }
 }
 @media screen and (max-width:376px) and (min-width:300px) {
     .right-side-container {
@@ -678,4 +697,5 @@ body {
         height: 28.5vh;
         margin-top: 0;
     }
+
 }
