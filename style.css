@@ -766,7 +766,20 @@ body {
 
     .slider .drag-line::before,
     .slider .drag-line::after {
-        height: 12px;
+        height: 50px;
+
+    }
+    .wrapper {
+        width: 80%;
+        height: 27vh;
+    }
+    .wrapper .images .img-1 {
+        background-size: 45vh;
+
+    }
+
+    .wrapper .images .img-2 {
+        background-size: 45vh;
 
     }
 
@@ -797,5 +810,18 @@ body {
     .slider .drag-line::before,
     .slider .drag-line::after {
         height: 12px;
+    }
+    .wrapper {
+        width: 85%;
+        height: 30vh;
+    }
+    .wrapper .images .img-1 {
+        background-size: 41vh;
+
+    }
+
+    .wrapper .images .img-2 {
+        background-size: 41vh;
+
     }
 }
