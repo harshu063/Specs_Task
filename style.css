@@ -228,6 +228,19 @@ body {
     background-position: 0% 33%, 120% 31%, 20% 80%;
     background-size: 36vh, 75vh, 60vh;
     height: 58vh;
+    animation: positionShift 3s;
+    animation-timing-function: steps(2, 2, 2);
+
+}
+
+@keyframes positionShift {
+    from {
+        background-position: -4000% 0%, 50% -250%, 0% 800%;
+    }
+
+    to {
+        background-position: 0% 33%, 120% 31%, 20% 80%;
+    }
 }
 
 .caption-main-container {
@@ -276,7 +289,7 @@ body {
     background-position-y: 60%;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    transition: width 2s ease-in;
+    transition: width 1s;
 }
 
 .anti-reflective-card:hover {
@@ -313,7 +326,7 @@ body {
     background-position-y: 88%;
     background-position-x: 90%;
     background-size: 50%;
-    transition: 2s ease-in;
+    transition: 1s;
 }
 
 .free-coating-card:hover {
@@ -349,7 +362,7 @@ body {
     background-size: 60%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    transition: 2s ease-in;
+    transition: 1s;
     width: 22%;
     background-color: #724D92;
     height: 61.6vh;
@@ -399,85 +412,88 @@ body {
     opacity: 0.602;
 }
 
-
-/* .info-img {
-    width: 60%;
-    height: 70vh;
-    background-image: url(./assets/with-and-without-glasses.jpg);
-    background-size: 100%;
-    border-radius: 20px;
-} */
-.wrapper{
+.wrapper {
     position: relative;
     height: 500px;
     width: 78%;
     overflow: hidden;
     background: #fff;
 
-  }
-  .wrapper .images{
+}
+
+.wrapper .images {
     height: 100%;
     width: 100%;
     display: flex;
-  }
-  .wrapper .images .img-1{
+}
+
+.wrapper .images .img-1 {
     height: 100%;
     width: 150%;
     background: url("./assets/with-and-without-glasses.jpg") no-repeat;
-    
-   
-  }
-  .wrapper .images .img-2{
+
+
+}
+
+.wrapper .images .img-2 {
     position: absolute;
     height: 100%;
     width: 150%;
     filter: blur(5px);
     background: url("./assets/with-and-without-glasses.jpg") no-repeat;
 
-  }
-  .wrapper .slider{
+}
+
+.wrapper .slider {
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 99;
-  }
-  .wrapper .slider input{
+}
+
+.wrapper .slider input {
     width: 100%;
     outline: none;
     background: none;
     -webkit-appearance: none;
-  }
-  .slider input::-webkit-slider-thumb{
+}
+
+.slider input::-webkit-slider-thumb {
     height: 486px;
     width: 3px;
     background: none;
     -webkit-appearance: none;
     cursor: col-resize;
-  }
-  .slider .drag-line{
+}
+
+.slider .drag-line {
     width: 3px;
     height: 500px;
     position: absolute;
     left: 49.85%;
     pointer-events: none;
     background-color: rgb(9, 163, 155);
-  }
-  .slider .drag-line::before,
-  .slider .drag-line::after{
+}
+
+.slider .drag-line::before,
+.slider .drag-line::after {
     position: absolute;
     content: "";
     width: 100%;
     height: 222px;
     background: #fff;
     background-color: rgb(9, 163, 155);
-  }
-  .slider .drag-line::before{
+}
+
+.slider .drag-line::before {
     top: 0;
-  }
-  .slider .drag-line::after{
+}
+
+.slider .drag-line::after {
     bottom: 0;
-  }
-  .slider .drag-line span{
+}
+
+.slider .drag-line span {
     height: 42px;
     width: 42px;
     border: 3px solid rgb(9, 163, 155);
@@ -487,9 +503,10 @@ body {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(9, 163, 155);
-  }
-  .slider .drag-line span::before,
-  .slider .drag-line span::after{
+}
+
+.slider .drag-line span::before,
+.slider .drag-line span::after {
     position: absolute;
     content: "";
     top: 50%;
@@ -497,15 +514,17 @@ body {
     border-bottom-width: 0px;
     border-right-width: 0px;
     transform: translate(-50%, -50%) rotate(45deg);
-  }
-  .slider .drag-line span::before{
+}
+
+.slider .drag-line span::before {
     left: 40%;
     border-left-color: #fff;
-  }
-  .slider .drag-line span::after{
+}
+
+.slider .drag-line span::after {
     left: 60%;
     border-top-color: #fff;
-  }
+}
 
 
 @media screen and (max-width:950px) and (min-width:350px) {
@@ -518,8 +537,9 @@ body {
         display: flex;
         gap: 5vh;
     }
-    #checkbox_toggle{
-       display: none;
+
+    #checkbox_toggle {
+        display: none;
     }
 
     .menu {
@@ -533,9 +553,11 @@ body {
         margin-top: 10px;
         background-color: rgb(96, 223, 160);
     }
-    .menu li a{
+
+    .menu li a {
         text-decoration: none;
     }
+
     .menu li+li {
         margin-top: 12px;
     }
@@ -549,12 +571,15 @@ body {
         font-size: 2.1rem;
         margin-right: 1vh;
     }
-    .phone-logo img{
+
+    .phone-logo img {
         clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
     }
-    .phone-details{
+
+    .phone-details {
         margin-top: 20px;
     }
+
     .container {
         flex-direction: column-reverse;
         height: 80vh;
@@ -581,10 +606,23 @@ body {
 
     .right-side-container {
         width: 100%;
-        background-position: 0% -5%, 140% 8%, 20% 60%;
+        background-position: 0% -5%, 160% 8%, 20% 60%;
         background-size: 20vh, 33vh, 33vh;
         height: 28.5vh;
         margin-top: 0;
+        animation: positionShift 3s;
+        animation-timing-function: steps(2, 2, 2);
+
+    }
+
+    @keyframes positionShift {
+        from {
+            background-position: -4000% 0%, 50% -250%, 0% 800%;
+        }
+
+        to {
+            background-position: 0% -5%, 160% 8%, 20% 60%;
+        }
     }
 
     .try-now-and-whats-new-section {
@@ -609,21 +647,25 @@ body {
         gap: 0;
         width: 100%;
     }
+
     .anti-reflective-card {
         margin: 0;
         width: 97%;
         gap: 22vh;
         height: 43vh;
-    }
+        transition: 1s;    }
+
     .top-caption {
         margin-top: 70px;
         margin-left: 20px;
         font-size: 0.8rem;
     }
+
     .bottom-caption {
         margin-bottom: 20px;
         margin-left: 20px;
     }
+
     .free-coating-card {
         width: 97%;
         margin: 0;
@@ -633,6 +675,7 @@ body {
         background-size: 25%;
         background-position-x: 100%;
         background-position-y: 50%;
+        transition: 1s;
     }
 
     .specscart-advantages {
@@ -640,7 +683,8 @@ body {
         flex-direction: row;
         gap: 0;
     }
-    .advantage img{
+
+    .advantage img {
         width: 80%;
     }
 
@@ -655,47 +699,86 @@ body {
         margin-bottom: 2vh;
         background-size: 30%;
         background-position-x: 95%;
+        transition: 1s;
     }
-    .free-coating-card:hover{
-        transition: none;
+
+    .free-coating-card:hover {
+        width: 97%;
     }
-    .shipping-card:hover{
-        transition: none;
+
+    .shipping-card:hover {
+        width: 97%;
     }
-    .anti-reflective-card:hover{
-        transition: none;
+
+    .anti-reflective-card:hover {
+        width: 97%;
     }
-    .info-img{
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 90%;
-    }
-    .wrapper{
+    .wrapper {
         width: 90%;
         height: 30vh;
     }
-    .wrapper .images .img-1{
+
+    .wrapper .images .img-1 {
         background-size: 41vh;
-       
+
     }
-    .wrapper .images .img-2{
+
+    .wrapper .images .img-2 {
         background-size: 41vh;
-    
+
     }
-    .slider .drag-line{
+
+    .slider .drag-line {
         height: 27.5vh;
     }
-    .slider .drag-line span{
+
+    .slider .drag-line span {
         top: 80%;
     }
 }
-@media screen and (max-width:376px) and (min-width:300px) {
+
+@media screen and (max-width:376px) and (min-width:363px) {
     .right-side-container {
         width: 100%;
-        background-position: 0% 0%, 120% 6%, 20% 60% ;
+        background-position: 10% 0%, 90% 6%, 30% 60%;
         background-size: 20vh, 33vh, 30vh;
         height: 28.5vh;
         margin-top: 0;
+        animation: positionShift 3s;
+        animation-timing-function: steps(2, 2, 2);
+
     }
 
+    @keyframes positionShift {
+        from {
+            background-position: -4000% 0%, 50% -250%, 0% 800%;
+        }
+
+        to {
+            background-position: 10% 0%, 90% 6%, 30% 60%;
+        }
+    }
+
+}
+@media screen and (min-width:280px) and (max-width:362px){
+    .right-side-container {
+        width: 100%;
+        background-position: 6% 0%, 140% 6%, 45% 60%;
+        background-size: 20vh, 33vh, 30vh;
+        height: 28.5vh;
+        margin-top: 0;
+        animation: positionShift 3s;
+        animation-timing-function: steps(2, 2, 2);
+
+    }
+
+    @keyframes positionShift {
+        from {
+            background-position: -4000% 0%, 50% -250%, 0% 800%;
+        }
+
+        to {
+            background-position: 6% 0%, 140% 6%, 45% 60%;
+        }
+    }
 }
