@@ -716,32 +716,34 @@ body {
     }
 
     .wrapper {
-        width: 90%;
+        width: 78%;
         height: 30vh;
     }
 
     .wrapper .images .img-1 {
-        background-size: 41vh;
+        background-size: 37vh;
 
     }
 
     .wrapper .images .img-2 {
-        background-size: 41vh;
-
+        background-size: 37vh;
     }
 
     .slider .drag-line {
-        height: 27.4vh;
+        height: 24.6vh;
 
     }
 
     .slider .drag-line span {
         top: 80%;
     }
-
-    
+    .slider .drag-line::before,
+    .slider .drag-line::after {
+        height: 50px;
+    }
 
 }
+
 
 @media screen and (max-width:376px) and (min-width:363px) {
     .right-side-container {
@@ -773,6 +775,7 @@ body {
     .wrapper {
         width: 80%;
         height: 27vh;
+        margin-bottom :2vh;
     }
     .wrapper .images .img-1 {
         background-size: 45vh;
@@ -781,6 +784,10 @@ body {
 
     .wrapper .images .img-2 {
         background-size: 45vh;
+
+    }
+    .slider .drag-line {
+        height: 27vh;
 
     }
 
@@ -825,4 +832,8 @@ body {
         background-size: 41vh;
 
     }
+    .slider .drag-line {
+        height: 27.3vh;
+
+}
 }
